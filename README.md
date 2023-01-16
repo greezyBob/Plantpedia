@@ -89,10 +89,10 @@ useEffect(() => {
     }
 
   }, [filters, plants])
-```js
+```
 ### Favouriting
 In order to make favourites work I had to send the request to the back-end adding the plant to the users favourites and then request the plant data to be sent back to the user so it could be rerendered with the favourite icon updated.
-```
+```js
 //update state when user clicks fav icon and on page render
   useEffect(() => {
     const isFavorite = (singlePlant) => {
