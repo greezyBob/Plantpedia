@@ -64,7 +64,7 @@ Once the site had all the functionality we wanted, styling became the focus. We 
 
 ### Searchbar
 We decided we wanted the search bar to be able to filter for multiple flower colours at the same time and work in conjunction with searching by name. This meant I needed to keep track of what filters the user had applied and loop through the plant data to match only plants that met the specific criteria
-```
+```js
 useEffect(() => {
     //regexp search term for testing
     const regExpSearch = new RegExp(filters.searchTerm, 'i')
@@ -89,7 +89,7 @@ useEffect(() => {
     }
 
   }, [filters, plants])
-```
+```js
 ### Favouriting
 In order to make favourites work I had to send the request to the back-end adding the plant to the users favourites and then request the plant data to be sent back to the user so it could be rerendered with the favourite icon updated.
 ```
